@@ -1,2 +1,5 @@
 # Python_Notes
-study notes, practise and projects codes
+学习 Python 的教程笔记、练习代码，一些实战项目代码。
+
+
+
