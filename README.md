@@ -8,6 +8,13 @@
 ### 练习
 
 1. [Python-100例](https://github.com/ccc013/Python_Notes/tree/master/Practise/Python_100_examples)--进度 10/100
+2. 6 种变量类型的基本练习代码
+   - [数字](https://github.com/ccc013/Python_Notes/blob/master/Practise/basic_practise.py)
+   - [字符串](https://github.com/ccc013/Python_Notes/blob/master/Practise/string_example.py)
+   - [列表](https://github.com/ccc013/Python_Notes/blob/master/Practise/list_example.py)
+   - [元组](https://github.com/ccc013/Python_Notes/blob/master/Practise/tuple_example.py)
+   - [字典](https://github.com/ccc013/Python_Notes/blob/master/Practise/dict_example.py)
+   - [集合](https://github.com/ccc013/Python_Notes/blob/master/Practise/set_example.py)
 
 
 
