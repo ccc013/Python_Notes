@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# image
+Projects/image_composition/*.jpg
+
+# ttc
+ Projects/image_composition/*.ttc
