@@ -25,20 +25,18 @@ def area(width, height):
 hello()
 width = 2
 height = 3
-# print('width={}, height={}, area={}'.format(width, height, area(width, height)))
+print('width={}, height={}, area={}'.format(width, height, area(width, height)))
 
 # 判断类型是否可变
 a = 5
-# print('a id:{}, val={}'.format(id(a), a))
+print('a id:{}, val={}'.format(id(a), a))
 a = 3
-# print('a id:{}, val={}'.format(id(a), a))
+print('a id:{}, val={}'.format(id(a), a))
 
 la = [1, 2, 3]
-# print('la id:{}, val={}'.format(id(la), la))
+print('la id:{}, val={}'.format(id(la), la))
 la[2] = 5
-
-
-# print('la id:{}, val={}'.format(id(la), la))
+print('la id:{}, val={}'.format(id(la), la))
 
 
 # 传递不可变对象的实例
@@ -47,11 +45,9 @@ def change_int(a):
 
 
 b = 2
-# print('origin b=', b)
+print('origin b=', b)
 change_int(b)
-
-
-# print('after call function change_int(), b=', b)
+print('after call function change_int(), b=', b)
 
 
 # 传递可变对象的实例
@@ -62,16 +58,19 @@ def chang_list(la):
     :return:
     """
     la.append([2, 3])
-    print('函数内部，la=', la)
+    print('函数内部: ', la)
     return
 
 
 la = [10, 30]
-
-
-# print('调用函数前, la=', la)
-# chang_list(la)
-# print('函数外取值, la=', la)
+print('调用函数前, la=', la)
+chang_list(la)
+print('函数外取值, la=', la)
+# 不修改 lb 数值的办法，传递副本
+lb = [13, 21]
+print('调用函数前, lb=', lb)
+chang_list(lb[:])
+print('传递 lb 的副本给函数 change_list, lb=', lb)
 
 
 # 位置参数
@@ -91,7 +90,7 @@ n = 3
 
 
 # 正确调用
-# print_str(strs, n)
+print_str(strs, n)
 
 
 # 错误例子1
@@ -111,8 +110,8 @@ def print_info(name, age=18):
     print('age: ', age)
 
 
-# print_info('jack')
-# print_info('robin', age=30)
+print_info('jack')
+print_info('robin', age=30)
 
 
 # 可变参数
@@ -132,9 +131,9 @@ def print_info2(name, age=18, height=178, *args):
         print('language: ', language)
 
 
-# print_info2('robin', 20, 180, 'c', 'javascript')
-# languages = ('python', 'java', 'c++', 'go', 'php')
-# print_info2('jack', 30, 175, *languages)
+print_info2('robin', 20, 180, 'c', 'javascript')
+languages = ('python', 'java', 'c++', 'go', 'php')
+print_info2('jack', 30, 175, *languages)
 
 
 # 关键字参数
