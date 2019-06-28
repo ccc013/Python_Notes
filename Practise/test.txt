@@ -1,0 +1,3 @@
+life is short, I use Python.
+Machine Learning
+Computer Vision
